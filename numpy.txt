@@ -1,0 +1,34 @@
+integration and differentation
+...................................
+import numpy as np
+import matplotlib.pyplot as plt
+x=np.linspace(1,4,100)
+
+y=(1/x**2)*np.sin(x)*np.exp(-x)
+dydx= np.gradient(y,x)
+y_int=np.cumsum(y)*(x[1]-x[0])
+
+plt.plot(x,y,label="function")
+plt.plot(x,dydx,label="derivative")
+plt.plot(x,y_int,label="integration")
+plt.legend()
+plt.grid()
+............................................
+
+complicated function
+.....................
+
+import numpy as np
+import matplotlib.pyplot as plt
+x=np.linspace(1,3,100)
+
+
+dydx= np.gradient(y,x)
+y_int=np.cumsum(y)*(x[1]-x[0])
+y=(np.sin(x**2)**3)*np.exp(-x**2)*(np.cos(x)**2)
+plt.plot(x,y,label="function")
+plt.plot(x,dydx,label="derivative")
+plt.plot(x,y_int,label="integration")
+plt.legend()
+plt.grid()
+........................................................

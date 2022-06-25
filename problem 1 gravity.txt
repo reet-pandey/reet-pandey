@@ -1,0 +1,19 @@
+import numpy as np
+import matplotlib.pyplot as plt
+t= np.linspace(0,2,100)
+g=9.8
+v0_j=10 #initial velocity of  ram
+v0_i=20  #initial velocity of shyam
+
+v_j=-1/2*g*t**2+v0_j*t
+v_i=-1/2*g*t**2+v0_i*t
+plt.xlabel('time',color='r',size='15') 
+plt.ylabel('hight',color='g',size='15')
+plt.title('gravitional range',color='b',size='15')
+plt.plot(t,v_j,label='ram')
+plt.plot(t,v_i,label='shyam')
+plt.grid()
+plt.legend()
+plt.show()
+....................................................
+

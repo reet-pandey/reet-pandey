@@ -1,0 +1,12 @@
+program SQ
+implicit none
+integer::i
+reAL,DIMENSION(10)::VALUE=[(I,I=1,10,1)]
+REAL,DIMENSION(10):: SQUARE
+DO I =1,10,1
+SQUARE(I)=(VALUE(I))**2
+END DO
+DO I=1,10,1
+WRITE(*,*)"VALUE(I)",SQUARE(I)
+END DO
+END PROGRAM SQ

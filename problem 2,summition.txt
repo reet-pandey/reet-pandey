@@ -1,0 +1,11 @@
+q)
+ADD UP ALL NUMBER FROM 1 T0 999 EXCEPT FOR THOSE THAT CAN BE DIVIDED BY 4,AND THOSE THAT CAN BE DIVIDED BY 6.
+..............................................................................................................
+CODE
+.....
+summation=0
+for i in range(1000):
+    if not(i%4==0) and not(i%6==0):
+       summation= summation+i
+print(summation)
+......................................................

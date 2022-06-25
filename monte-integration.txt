@@ -1,0 +1,21 @@
+from math import *
+from random import *
+
+def func(x): return x*exp(-x)  #integrand
+
+n= eval(input("enter the sampling points limit"))
+seed()
+
+f1=f2=0e0   #quadrature with uniform sampling
+for i in range(1,n+1):
+    x=random()
+    f=func(x)
+    f1 +=f    #average sum
+    f2 +=f*f  #sum of squares
+    
+f1 /=n
+f2 /=n
+
+s=f1
+sigma=sqrt((f2-f1*f1)/n) #integration
+print("average/integration I; =",s,"standard deviation +/-",sigma)

@@ -1,0 +1,81 @@
+class
+......................
+......................
+class computer:
+    def config(self):
+        print('i5','16gb','1TB')
+ 
+com1=computer()
+print(type(com1)) #data type of com1
+    
+computer.config(com1)    #way to call com1 data
+com1.config()            #another way to call the com1
+
+.......................................................................
+.........................................................................
+
+object
+...........
+class computer:
+    def __init__(self,cpu,ram):
+        self.cpu = cpu
+        self.ram = ram
+        
+    def config(self):
+        print('config is',self.cpu,self.ram) #objets
+        
+com1 = computer('i5','16GB')
+
+com2 = computer('ryzen','8GB')
+
+com1.config()
+com2.config()
+............................................
+................................................
+
+#constructor
+-------------\
+class computer:
+    def __init__(self):
+        self.name="reet"
+        self.age=28
+        
+      
+        
+c1 = computer()
+c2 = computer()
+
+print(c1.name) #same name reet for both
+print(c2.name)
+print(c1.age)
+
+c1.name = "kumar" #we need to update c to get different names
+c1.age=30
+print(c1.name)
+print(c2.name)
+print(c1.age)
+------------------------------------------------------------------
+#update
+---------------
+class computer:
+    def __init__(self):
+        self.name="reet"
+        self.age=28
+     
+    def update(self):
+        self.age = 35
+        
+c1 = computer()
+c2 = computer()
+
+print(c1.name) #same name reet for both
+print(c2.name)
+print(c1.age)
+
+c1.name = "kumar" #we need to update c to get different names
+c1.age=30 # if we use upfate function it will skip this line
+c1.update() #update c1
+print(c1.name)
+print(c2.name)
+print(c1.age)
+-----------------------------------------------

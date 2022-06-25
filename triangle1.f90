@@ -1,0 +1,12 @@
+!a= area of trangle
+!s= peremeter of triangle
+program triangle
+implicit none
+real::a,b,c,s,area
+write(*,*)"value of a,b,c"
+read(*,*)a,b,c
+s=((a+b+c)/2.0)
+area=sqrt(s*(s-a)*(s-b)*(s-c))
+write(*,*)"s is=",s
+write(*,*)"area is=",area
+end program triangle

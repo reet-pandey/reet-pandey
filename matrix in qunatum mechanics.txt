@@ -1,0 +1,47 @@
+Spin 1/2 Matrice
+................
+code
+.............
+import numpy as np
+import sympy as smp
+from sympy import Matrix
+from sympy.physics.quantum import TensorProduct
+from sympy.matrices import matrix_multiply_elementwise
+
+
+Sxa = smp.Rational(1, 2)* smp.Matrix([[0, 1],
+                                     [1, 0]])
+Sya = smp.Rational(1, 2)* smp.Matrix([[0, -smp.I],
+                                      [smp.I, 0]])
+Sza = smp.Rational(1, 2)* smp.Matrix([[1, 0],
+                                      [0, -1]])
+S2a = Sxa@Sxa + Sya@Sya + Sza@Sza  #square of matrix
+.......................................
+# to test comutation relation between 
+#1) x and y
+Sya@Sxa-Sxa@Sya
+
+
+#2) s^2 and x 
+S2a@Sxa-Sxa@S2a
+
+....................................................
+
+Spin 1 Matrices
+.................................................
+code
+...............
+Sxb = 1/smp.sqrt(2) * smp.Matrix([[0, 1, 0],
+                                  [1, 0, 1],
+                                  [0, 1, 0]])
+Syb = 1/smp.sqrt(2) * smp.Matrix([[0, -smp.I, 0],
+                                  [smp.I, 0, -smp.I],
+                                  [0, smp.I, 0]])
+Szb = smp.Matrix([[1, 0, 0],
+                  [0, 0, 0],
+                  [0, 0, -1]])
+
+S2b = Sxb@Sxb + Syb@Syb + Szb@Szb #square matrix
+....................................................
+	9
+

@@ -1,0 +1,62 @@
+#writing a multidimension array
+...................
+#multidimension aray
+a=np.array([[1,2,3],[2,6,0],[4,0,7]])
+print(a)
+.............................
+
+#mathematical operation
+print(2*a)
+print(b)
+print(a*b)
+..................................
+#unraveling the n-dimension matrix elements in single line
+.....................................
+a.ravel()
+......................
+a>5 #boolean indexing
+b=np.random.randn(3,3)#3by3 random matrix
+.......................................
+b=a[a>5] #looking for elements in matrix greater than 5.
+..................................................
+#indexing
+print(a[0]) #first row elements 
+print(a[:,0]) #first column elements
+print(a[1:][:,1]) #elements of second row second colunm
+print(a[1:,0:1]) #second row all elements ,firts column one set.
+print(a[1:,:2])#second row all elements, all column  2 set.
+.............................................................
+#2D functions
+#playing with meshgrid
+.........................
+x=np.linspace(0,3,300)
+y=np.linspace(0,3,300)
+xv,yv=np.meshgrid(x,y)
+zv=xv**2+yv**2
+plt.xlabel('x',fontsize=20)
+plt.ylabel('y',fontsize=20)
+#print(yv) #y elements are all equal ,two understand better about yv replace 300 to 3
+#print(xv) #x elements are all equal
+#print(zv) #z elements are all equal
+plt.contourf(xv, yv, zv,levels=30)
+plt.colorbar()
+plt.show()
+........................................................
+
+#matrix algebra
+..................
+a=np.array([[3,2,1],[5,-5,4],[6,0,1]])
+b=np.array([1,0,1])
+c=np.array([2,3,-3])
+print(a)
+print(b)
+
+print(a@b)
+print(a.T) #TRANSPOSE of a
+d=np.dot(b,c)#dot product of b,c
+d1=np.cross(b,c) #cross product of b,c
+print(d)
+print(d1)
+...................................................
+
+

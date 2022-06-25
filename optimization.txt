@@ -1,0 +1,10 @@
+from scipy.optimize import minimize
+
+def f(x):
+    return (x-3)**2   #we are minimizing (x-3)**2
+
+res=minimize(f,2)   #here initial guess is 2
+print('minimization details',res) #res is minimization function
+
+print('function is minimum at x=',res.x[0])
+.......................................................................

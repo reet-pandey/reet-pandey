@@ -1,0 +1,86 @@
+list
+.......
+x=[]
+tuples
+.......
+x=()
+...........
+directory
+x={}
+.........................
+array
+
+......
+#we can do mathematical operations inside array using numpy
+#ex code
+...........
+import numpy as np
+x = np.array([1,2,3])
+y= np.array([2,4,5])
+
+print(1/x)
+print(x/y)
+print(x**y)
+.........................................
+#two ways to use numpy
+1)numpy.linspace
+it distribute the domain in equal interval
+ex
+code
+,,,,,,,
+x=np.linspace(1,30,5)
+print(x)
+...........
+2)numpy.arange
+#it distribute the domain in equal space interval
+ex
+code
+.........
+x=np.arange(1,30,5)
+print(x)
+
+............................................................
+loop......
+.........................................................
+1)regular loop
+code
+,,,,,
+y=[]
+for i in range(0,10):
+    
+    y.append(i**2) #append oprate on list elements.
+print(y) 
+.........................................................
+
+2) list loop
+code
+...........
+r=['x','y','z']
+for item in r:
+    print(item)
+.........................
+3)
+enumarate loop
+............
+code
+..
+r=['x','y','z']
+for i ,item in enumerate(r):
+    print('index {} contains {}'.format(i,item))
+....................................
+
+4)list comprehension loop
+............
+
+r =[i**3 for i in range(20)]
+print(r)
+....................
+5)double loop/nasted loop
+............
+for i in range (5):
+    for j in range (6):
+        print('i={} j={}'.format(i,j))
+....................................
+
+
+

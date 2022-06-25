@@ -1,0 +1,49 @@
+# file word by word
+
+# opening the text file
+with open ('testfile.txt','r') as file:
+    
+# reading each line   
+    for line in file:
+        
+ # reading each line           
+        for word in line.split():
+            
+            print(word)
+...................................................................
+read character by character from a file
+............................................
+# to read file character by character
+ 
+ 
+file = open('testfile.txt', 'r')
+ 
+while 1:
+     
+    # read by character
+    char = file.read(1)         
+    if not char:
+        break
+         
+    print(char)
+ 
+file.close()
+...............................................................
+#to read random character at a time
+
+# to read file character by character
+ 
+ 
+file = open('testfile.txt', 'r')
+ 
+while 1:
+     
+    # read by character
+    char = file.read(1)  #reading 1 at a time       
+    if not char:
+        break
+         
+    print(char)
+ 
+file.close()
+.........................................................
