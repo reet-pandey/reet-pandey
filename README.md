@@ -1,5 +1,5 @@
 - 👋 Hi, I’m @reet-pandey
-- 👀 I’m interested in application of programming physics...
+- 👀 I’m interested in application of programming in physics...
 - 🌱 I’m currently learning ..python.
 - 💞️ I’m looking to collaborate on ..solving physics related problem/models.
 - 📫 How to reach me ...r12166243@gmail.com
